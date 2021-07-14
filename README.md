@@ -48,5 +48,3 @@ For more information and definitions of these terms, see our [project managemen
 Use the automatic trigger functionality of your [GitHub project board](https://help.github.com/en/github/managing-your-work-on-github/about-project-boards).
 
 ---
-
-Finally, feel free to get creative with the content of your website! Good luck!
