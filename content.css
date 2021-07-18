@@ -1,0 +1,44 @@
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  /* font-size: 2rem; */
+  font-weight: 600;
+  letter-spacing: 1x;
+}
+
+.pricing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  /* padding: 20px 25px; */
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  /* font-size: 32px; */
+  /* font-weight: 10; */
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color all 20ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: rgb(221, 155, 221);
+}
+
+.pricing-button.is-featured:hover {
+  background-color: rgb(136, 3, 136);
+}
+
+.text-wrapper {
+  min-height: 150px;
+}
