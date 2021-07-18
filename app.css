@@ -25,7 +25,7 @@
 nav {
   display: flex;
   position: sticky;
-  top: 0px;
+  top: 3px;
   background: rgb(231, 183, 192);
   grid-area: nav;
   border-radius: var(--main-radius);
@@ -88,6 +88,7 @@ footer {
       "footer";
     height: 200vh;
     text-align: center;
+    grid-gap: 0.3rem;
   }
 }
 /* ///////// END media query //////// */
