@@ -15,10 +15,10 @@
   /* background-color: black; */
   /* background: rgb(254, 255, 214); */
   grid-template-areas:
-    "nav nav nav nav"
-    "sidebar main main main"
-    "sidebar content1 content2 content3"
-    "sidebar footer footer footer";
+    'nav nav nav nav'
+    'sidebar main main main'
+    'sidebar content1 content2 content3'
+    'sidebar footer footer footer';
   grid-gap: 0.3rem;
 }
 
@@ -79,13 +79,13 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr 2fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "nav"
-      "main"
-      "sidebar"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
+      'nav'
+      'main'
+      'sidebar'
+      'content1'
+      'content2'
+      'content3'
+      'footer';
     height: 200vh;
     text-align: center;
     grid-gap: 0.3rem;
