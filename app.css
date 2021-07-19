@@ -3,10 +3,30 @@
   --main-green-light: #eafaf1;
   --main-radius: 4px;
   --main-padding: 4px;
+  /* Colours */
+  --primary-colour: hsl(242, 79%, 53%);
+  --secondary-colour: hsl(224, 27%, 45%);
+  --font-colour: hsl(0, 0%, 26%);
+  --bg-colour: rgba(255, 255, 255, 0.981);
+  --body-colour: #f1ba14a9;
 }
+
+.dark {
+  /* Dark theme mode colours */
+  --primary-colour: hsl(242, 79%, 77%);
+  --secondary-colour: hsl(224, 20%, 59%);
+  --font-colour: hsl(240, 100%, 94%);
+  --bg-colour: hsla(240, 25%, 12%, 0.493);
+  --body-colour: #090519;
+}
+
 /*///// end using root for variables ///////*/
 
 /*/////// styling the containers/////// */
+body {
+  background: var(--body-colour);
+}
+
 .container {
   display: grid;
   height: 100vh;
@@ -20,55 +40,65 @@
     "sidebar content1 content2 content3"
     "sidebar footer footer footer";
   grid-gap: 0.3rem;
+  transition: all 1s ease;
+  color: var(--font-colour);
+  background: var(--mainBackground-colour);
 }
 
 nav {
   display: flex;
   position: sticky;
   top: 3px;
-  background: rgb(231, 183, 192);
+  background: var(--bg-colour);
   grid-area: nav;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
+  transition: all 1s ease;
 }
 main {
-  background: rgb(133, 133, 240);
+  background: var(--bg-colour);
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  transition: all 1s ease;
 }
 .sidebar {
-  background: rgb(241, 235, 235);
+  background: var(--bg-colour);
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  text-align: center;
+  transition: all 1s ease;
 }
 .content1 {
-  background: var(--main-green-light);
+  background: var(--bg-colour);
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   text-align: center;
+  transition: all 2s ease;
 }
 .content2 {
-  background: var(--main-green-light);
+  background: var(--bg-colour);
   grid-area: content2;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   text-align: center;
+  transition: all 2s ease;
 }
 .content3 {
-  background: var(--main-green-light);
+  background: var(--bg-colour);
   grid-area: content3;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   text-align: center;
+  transition: all 2s ease;
 }
 
 footer {
-  background: orange;
+  background: var(--bg-colour);
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -89,6 +119,12 @@ footer {
     height: 200vh;
     text-align: center;
     grid-gap: 0.3rem;
+  }
+  footer {
+    transition: all 1s ease;
+  }
+  nav {
+    transition: all 1s ease;
   }
 }
 /* ///////// END media query //////// */
