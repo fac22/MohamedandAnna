@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="content.css" />
+
     <title>Our Agency</title>
+
+    <link rel="stylesheet" href="theme.css" />
+    <title>Git Workflow Workshop</title>
+
   </head>
 
   <body>
@@ -22,7 +27,20 @@
     //////////// END footer section -->
 
     <section class="container">
+
       <nav class="navbar">| ABOUT US | EMPLOYEE | PRICES | CONTACT |</nav>
+
+      <nav class="navbar">
+        | ABOUT US | EMPLOYEE | PRICES | CONTACT |
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <em>Dark!</em>
+        </div>
+      </nav>
+
 
       <main class="main">about us</main>
 
@@ -82,5 +100,7 @@
 
       <footer>footer</footer>
     </section>
+
+    <script src="./themeSwitch.js"></script>
   </body>
 </html>
