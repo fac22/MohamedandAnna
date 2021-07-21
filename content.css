@@ -67,3 +67,10 @@
 span {
   color: #888;
 }
+
+.pricing-header {
+  color: crimson;
+
+  font-weight: 600;
+  letter-spacing: 1x;
+}

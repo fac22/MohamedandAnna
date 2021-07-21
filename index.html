@@ -14,20 +14,17 @@
   </head>
 
   <body>
-    <!-- <h1 class="page-heading">GIT WORKFLOW WORKSHOP</h1> -->
-    <!-- <p>I hope this works ANNA</p>
-
-    /////NAVIGATION
-    <nav></nav>
-    /////END NAVIGATION /////About is section
-    <section></section>
-    /////End About is section ////////////footer section
-    <footer></footer>
-    //////////// END footer section -->
-
     <section class="container">
+      <!-- Navigation section -->
       <nav class="navbar">
-        | ABOUT US | EMPLOYEE | PRICES | CONTACT |
+        <div class="theme-switch-wrapper">
+          <li><a href="#aboutus">ABOUT US</a></li>
+          <li><a href="#employee">EMPLOYEE </a></li>
+          <li><a href="#prices">PRICES</a></li>
+
+          <li><a href="#footer">CONTACT</a></li>
+        </div>
+
         <div class="theme-switch-wrapper">
           <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
@@ -36,8 +33,10 @@
           <em>Dark!</em>
         </div>
       </nav>
+      <!-- //////Main -->
+      <main id="aboutus" class="main">Main section</main>
 
-      <section class="sidebar">
+      <sectionc id="employee" class="sidebar">
         <img src="./images/female_avatar.png" alt="a female avatar" />
         <p>
           Jane Smith is a web developer from London. She likes to go climbing
@@ -50,9 +49,9 @@
           Minecraft and hanging out in the park.
         </p>
         <p><span>LinkedIn | Twitter | Slack | Email</span></p>
-      </section>
+      </sectionc>
       <!-- ///////////////content1///////////////// -->
-      <section class="content1">
+      <section id="prices" class="content1">
         <img src="./images/icon1.png" alt="" class="pricing-img" />
         <div class="text-wrapper">
           <h2 class="pricing-header">Personal</h2>
@@ -91,7 +90,7 @@
       </section>
       <!-- ///////////////END content3///////////////// -->
 
-      <footer>footer</footer>
+      <footer id="footer">footer</footer>
     </section>
 
     <script src="./themeSwitch.js"></script>
