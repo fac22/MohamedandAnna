@@ -11,7 +11,7 @@
 }
 
 .pricing-price {
-  color: #016ff9;
+  color: #2b83f8;
   display: block;
   font-size: 32px;
   font-weight: 700;
@@ -21,7 +21,7 @@
   border: 1px solid #9dd1ff;
   border-radius: 10px;
   /* padding: 20px 25px; */
-  color: #348efe;
+  color: #034ebf;
   display: inline-block;
   padding: 15px 35px;
   /* font-size: 32px; */
@@ -64,8 +64,17 @@
   margin: 0.5rem;
 }
 
-span {
-  color: #888;
+.social-icons {
+  display: flex;
+}
+
+.social-icons > img {
+  width: 1.5rem;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  filter: invert(26%) sepia(100%) saturate(2371%) hue-rotate(202deg)
+    brightness(99%) contrast(108%);
 }
 
 .pricing-header {
