@@ -1,3 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  margin: 5px;
+  color: crimson;
+  font-weight: 600;
+}
+li {
+  list-style-type: none;
+  margin: 10px 0;
+}
 /*///// using root for variables ///////*/
 :root {
   --main-green-light: #eafaf1;
@@ -7,8 +20,8 @@
   --primary-colour: hsl(242, 79%, 53%);
   --secondary-colour: hsl(224, 27%, 45%);
   --font-colour: hsl(0, 0%, 26%);
-  --bg-colour: rgba(255, 255, 255, 0.981);
-  --body-colour: #f1ba14a9;
+  --bg-colour: rgba(255, 255, 255, 0.481);
+  --body-colour: linear-gradient(to top, #ffae00 90%, #ffffff 100%);
 }
 
 .dark {
@@ -35,10 +48,10 @@ body {
   /* background-color: black; */
   /* background: rgb(254, 255, 214); */
   grid-template-areas:
-    'nav nav nav nav'
-    'sidebar main main main'
-    'sidebar content1 content2 content3'
-    'sidebar footer footer footer';
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
   grid-gap: 0.3rem;
   transition: all 1s ease;
   color: var(--font-colour);
@@ -48,7 +61,7 @@ body {
 nav {
   display: flex;
   position: sticky;
-  top: 3px;
+  top: 0px;
   background: var(--bg-colour);
   grid-area: nav;
   border-radius: var(--main-radius);
@@ -56,6 +69,8 @@ nav {
   justify-content: space-between;
   text-align: center;
   transition: all 1s ease;
+  z-index: 2;
+  width: auto;
 }
 main {
   background: var(--bg-colour);
@@ -109,22 +124,19 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr 2fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      'nav'
-      'main'
-      'sidebar'
-      'content1'
-      'content2'
-      'content3'
-      'footer';
-    height: 200vh;
+      "nav"
+      "main"
+      "sidebar"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+    height: 400vh;
     text-align: center;
     grid-gap: 0.3rem;
   }
-  footer {
-    transition: all 1s ease;
-  }
-  nav {
-    transition: all 1s ease;
+  .theme-switch-wrapper {
+    font-size: 11px;
   }
 }
 /* ///////// END media query //////// */

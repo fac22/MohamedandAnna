@@ -76,3 +76,10 @@
   filter: invert(26%) sepia(100%) saturate(2371%) hue-rotate(202deg)
     brightness(99%) contrast(108%);
 }
+
+.pricing-header {
+  color: crimson;
+
+  font-weight: 600;
+  letter-spacing: 1x;
+}
