@@ -20,8 +20,8 @@ li {
   --primary-colour: hsl(242, 79%, 53%);
   --secondary-colour: hsl(224, 27%, 45%);
   --font-colour: hsl(0, 0%, 26%);
-  --bg-colour: rgba(255, 255, 255, 0.481);
-  --body-colour: linear-gradient(to top, #ffae00 90%, #ffffff 100%);
+  --bg-colour: rgba(255, 255, 255, 0.381);
+  --body-colour: linear-gradient(to top, #cbeef8 0%, #eafffc 100%);
 }
 
 .dark {
