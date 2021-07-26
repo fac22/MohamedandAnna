@@ -53,10 +53,6 @@
   margin-top: 0.8rem;
   width: 45%;
 }
-.sidebar > img:hover {
-  filter: brightness(90%);
-  transition: 0.5s;
-}
 
 .sidebar > p {
   font-size: 1rem;
@@ -68,13 +64,16 @@
   display: flex;
 }
 
-.social-icons > img {
+.social-icons-img {
   width: 1.5rem;
   margin-left: 0.8rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   filter: invert(26%) sepia(100%) saturate(2371%) hue-rotate(202deg)
     brightness(99%) contrast(108%);
+}
+.social-icons-img:hover {
+  transform: scale(1.3) perspective(1px);
 }
 
 .pricing-header {
