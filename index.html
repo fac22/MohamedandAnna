@@ -145,10 +145,52 @@
         <a href="#/" class="pricing-button">Free trial</a>
       </section>
       <!-- ///////////////END content3///////////////// -->
+      <!-- ///////////////content4///////////////// -->
+      <section class="content4">
+        <h2 class="contact-form">Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email"
+            >Email Address:
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="3"
+            cols="30"
+          ></textarea>
+          <label for="verification" 
+            >Please prove you are a human by typing any three letters between
+            A-Z:</label
+          >
+          <input
+            type="text"
+            required
+            name="verification"
+            pattern="[A-Za-z]{3}"
+            title="Please confirm you are not a robot"
+          />
+          <button id="submit-form">Submit</button>
+        </form>
+        <div id="submission-confirmed"></div>
+        <div id="display-name"></div>
+        <div id="display-email"></div>
+        <div id="display-message"></div>
 
+        <div id="warning-text">Your message is too long!</div>
+      </section>
+  
+
+      </section>
+      <!-- ///////////////END content4///////////////// -->
       <footer id="footer">footer</footer>
     </section>
 
     <script src="./themeSwitch.js"></script>
+    <script src="./dom.js"></script>
   </body>
 </html>
