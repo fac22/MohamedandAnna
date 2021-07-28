@@ -44,3 +44,13 @@ document.querySelector('form').onsubmit = (event) => {
 
   showRequest();
 };
+
+
+//////////////Button form////////////////////////////
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

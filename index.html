@@ -34,7 +34,12 @@
         </div>
       </nav>
       <!-- //////Main -->
-      <main id="aboutus" class="main">Main section</main>
+      <main id="aboutus" class="main">
+        Staff Support team is the backbone of any company. 
+        we manage resources across many different organizations with excellent stafing solutions. 
+       We provide permanent, temporary and contract staff for the following disciplines: 
+         Administration / Secretarial / PA/ Office Manager/ Accounting & finance/Customer Service/ Human Resources & Personnel
+      </main>
 
       <section id="employee" class="sidebar">
         <img src="./images/female_avatar.png" alt="a female avatar" />
@@ -104,6 +109,60 @@
             />
           </a>
         </div>
+       
+
+      <button class="open-button" onclick="openForm()">Add User</button>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>User</h1>
+   
+          
+
+
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+          <!-- <label for="email"
+            >Email Address:
+            <input type="email" name="email" id="email" required />
+          </label> -->
+          <label for="message">Employee description:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows="3"
+            cols="30"
+          ></textarea>
+          <!-- <label for="verification" 
+            >Please prove you are a human by typing any three letters between
+            A-Z:</label
+          >
+          <input
+            type="text"
+            required
+            name="verification"
+            pattern="[A-Za-z]{3}"
+            title="Please confirm you are not a robot"
+          /> -->
+
+          <button id="submit-form" class="btn">Submit</button>
+
+
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+       
+      </div>
+      
+       </form>
+        <div id="submission-confirmed"></div>
+        <div id="display-name"></div>
+        <div id="display-message"></div>
+        </form>
+      
+        
+
+
       </section>
 
       <!-- ///////////////content1///////////////// -->
@@ -187,10 +246,45 @@
 
       </section>
       <!-- ///////////////END content4///////////////// -->
-      <footer id="footer">footer</footer>
+      <footer id="footer">
+      
+        </div>
+        <div class="social-icons">
+          <a href="#">
+            <img
+              class="social-icons-img"
+              src="./images/twitter.svg"
+              alt="twitter logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="social-icons-img"
+              src="./images/linkedin.svg"
+              alt="linkedin logo"
+          /></a>
+          <a href="#">
+            <img
+              class="social-icons-img"
+              src="./images/slack.svg"
+              alt="slack logo"
+            />
+          </a>
+          <a href="https://bit.ly/3eTUGvr">
+            <img
+              class="social-icons-img"
+              src="./images/email.svg"
+              alt="email symbol"
+            />
+          </a>
+        </div>
+        <p>Copyright @ 2021 Anna and Mohamed. All rights reserved</p>
+      </div>
+        
+       </footer>
     </section>
 
     <script src="./themeSwitch.js"></script>
     <script src="./dom.js"></script>
+    
   </body>
 </html>
