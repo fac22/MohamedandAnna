@@ -17,7 +17,8 @@
   font-weight: 700;
 }
 
-.pricing-button {
+.pricing-button,
+#submit-form {
   border: 1px solid #9dd1ff;
   border-radius: 10px;
   /* padding: 20px 25px; */
@@ -31,6 +32,7 @@
   transition: background-color all 20ms ease-in-out;
 }
 .pricing-button:hover,
+#submit-form:hover,
 .pricing-button:focus {
   background-color: rgb(221, 155, 221);
 }
@@ -78,7 +80,43 @@
 
 .pricing-header {
   color: crimson;
-
   font-weight: 600;
   letter-spacing: 1x;
+}
+
+.contact-form {
+  color: #2b83f8;
+}
+
+[aria-invalid='true'] {
+  box-shadow: 0 0 0 3px red;
+}
+
+input {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#submit-form {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#submission-confirmed,
+#display-name,
+#display-email,
+#display-message {
+  margin: 0.5rem;
+}
+
+#warning-text {
+  color: red;
+  font-size: medium;
 }
