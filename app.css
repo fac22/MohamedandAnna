@@ -183,6 +183,7 @@ footer .social-icons {
   /* right: 28px; */
   width: 150px;
   border-radius: 20px 2px;
+  z-index: 3;
 }
 
 /* The popup form - hidden by default */
