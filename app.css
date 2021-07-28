@@ -111,6 +111,14 @@ main {
   text-align: center;
   transition: all 2s ease;
 }
+.content4 {
+  background: var(--bg-colour);
+  grid-area: content4;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  text-align: center;
+  transition: all 2s ease;
+}
 
 footer {
   background: var(--bg-colour);
@@ -138,7 +146,7 @@ footer .social-icons {
       "content3"
       "content4"
       "footer";
-    height: 400vh;
+    height: 450vh;
     text-align: center;
     grid-gap: 0.3rem;
   }
