@@ -88,20 +88,23 @@
   color: #2b83f8;
 }
 
-[aria-invalid='true'] {
+[aria-invalid="true"] {
   box-shadow: 0 0 0 3px red;
 }
 
 input {
-  display: block;
+  /* display: block; */
+  display: flex;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 98%;
 }
 
 textarea {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 98%;
 }
 #submit-form {
   padding: 0.5rem;
